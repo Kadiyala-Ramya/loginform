@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--1.Login Form:
+Should contain fields for Email and Password.
+Include a "Forgot Password" option.
+Provide a "New Register" option for new users.
+2.Registration Form:
+Should collect the following user details:
+First Name, Last Name, Email, Password, Confirm Password, Mobile Number, Gender
+3.Forgot Password Form:
+Should allow users to reset their password by entering:
+Mobile Number, New Password, Confirm Password
+-->
+    <form action="template.html">
+        <label>Username:</label>
+        <input type="email" placeholder="Enter your username" pattern="[A-Za-z0-9]+@gmail.com" required><br><br>
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+        <a href="forgot.html">forgot password</a><br><br>
+        <input type="submit" value="Login">
+        <label>Not yet a member?
+        <a href="Registration.html">Register</a></label>
+
+    </form>
+</body>
+</html>
